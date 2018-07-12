@@ -1,9 +1,9 @@
 <?php
 // I18N support information here
-$language = 'en_US';
+$language = 'ru';
 
-putenv('LANG=' . $language);
-setlocale(LC_ALL, $language);
+putenv('LANG=ru_RU.utf-8');
+setlocale(LC_ALL, 'ru_RU.utf-8');
 
 // Set the text domain as 'messages'
 $domain = 'messages';
@@ -13,4 +13,4 @@ bindtextdomain($domain, $localedir);
 textdomain($domain);
 
 echo gettext('hello-world') . '<br/>';
-?>
+
